@@ -11,7 +11,7 @@ router.get("/index", (req, res) =>{
     res.render("index");
 });
 
-router.get('/login/', indexController.index2)
+router.get('/login/', indexController.login)
 
 router.get('/registro/', indexController.registro)
 

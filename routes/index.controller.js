@@ -15,8 +15,6 @@ indexController.login = (req, res) =>{
     res.render('login')
 }
 
-indexController.registro = (req, res) =>{
-    res.render('registro')
-}
+
 
 export default indexController

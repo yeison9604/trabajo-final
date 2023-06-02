@@ -42,10 +42,12 @@ router.post("/registro", async(req, res)=>{
 
     let pool = await sql.connect(config);
     const {id, username, password} = req.body;
-    var query = "SELECT login(id, username, password) VALUES('" + id + "', '" + username + "','" + password + "')"
+    var query = "INSERT INTO login(id, username, password) VALUES('" + id + "', '" + username + "','" + password + "')"
     pool.request().query(query);
-    res.redirect("registro");
+    res.redirect("/registro");
 });
+
+
 
 router.get("/eliminar/:cedula", async(req, res)=>{
 

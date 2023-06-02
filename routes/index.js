@@ -16,11 +16,9 @@ router.get("/index", (req, res) =>{
 
 router.get('/login/', indexController.login)
 
-/*router.get('/registro/', indexController.registro)*/
+router.get('/registro/', indexController.registro)
 
 
-
-/*router.post("/registro/", authcontrollers.registro)*/
 
 
 

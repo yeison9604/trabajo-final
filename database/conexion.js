@@ -6,7 +6,7 @@ const config = {
     user: "tdea",
     password: "losmejores123",
     server: "localhost",
-    database: "Taller1",
+    database: "logiin",
     options:{
         encrypt:true,
         trustServerCertificate:true,

@@ -19,7 +19,7 @@ router.get('/login/', indexController.login)
 router.get('/registro/', indexController.registro)
 
 
-
+router.post('/loginUser/', indexController.loginUser)
 
 
 module.exports = router;

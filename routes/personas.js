@@ -41,12 +41,11 @@ router.post("/insertarpersonas", async(req, res)=>{
 router.post("/registro", async(req, res)=>{
 
     let pool = await sql.connect(config);
-    const {id, username, password} = req.body;
-    var query = "INSERT INTO login(id, username, password) VALUES('" + id + "', '" + username + "','" + password + "')"
+    const {name, username, pass} = req.body;
+    var query = "INSERT INTO login(name, username, pass) VALUES('" + name + "', '" + username + "','" + pass + "')"
     pool.request().query(query);
     res.redirect("/registro");
 });
-
 
 
 router.get("/eliminar/:cedula", async(req, res)=>{
